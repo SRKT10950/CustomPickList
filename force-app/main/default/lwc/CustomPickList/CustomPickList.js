@@ -8,6 +8,8 @@
  * @example
  * <c-custom-pick-list class="slds-form-element__control slds-input-has-icon slds-input-has-icon_right" options={Options} selected-value={value} label="Label Name" field-name="Name" multi-select="true if need to select multiple value"
                                 onselect={handleSelect}></c-custom-pick-list>
+    * update options and values from parent Js.
+   * this.template.querySelector("c-custom-pick-list").initDropdownValues(options, singleValue, ListOfValues);
  */
 
 import { LightningElement, track, api } from 'lwc';
